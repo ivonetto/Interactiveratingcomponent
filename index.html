@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="/assets/styles.css">
+
+  <title>Frontend Mentor | Interactive rating component</title>
+
+</head>
+<body>
+<div class="container" id="container">
+  <div class="estrela">
+    <img class="estrela-icon" src="/images/icon-star.svg" alt="estrela">
+  </div>
+  <div class="texto">
+    <h2>How did we do?</h2>
+
+    <p>
+      Please let us know how we did with your support request. All feedback is appreciated 
+      to help us improve our offering!
+    </p>
+
+  </div>
+
+  <div class="rating">
+    <span class="rate-btn one" id="one" onclick="rateBtn()">1</span>
+    <span class="rate-btn two" id="two" onclick="rateBtn()">2</span>
+    <span class="rate-btn three" id="three" onclick="rateBtn()">3</span>
+    <span class="rate-btn four" id="four" onclick="rateBtn()">4</span>
+    <span class="rate-btn five" id="five" onclick="rateBtn()">5</span>
+  </div>
+  <div class="button">
+    <button class="btn" onclick="onSubmit()">Submit</button>
+  </div>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Ivo Netto</a>.
+  </footer>
+</div>
+
+
+<div class="onClick-container" id="onClick-container">
+  <div class="estrela">
+    <img src="/images/illustration-thank-you.svg" alt="obrigado">
+  </div>
+  <div class="texto">
+    <p class="result">You selected <span id="result-no"></span> out of 5
+    </p>
+    <h2>Thank you!</h2>
+    We appreciate you taking the time to give a rating. If you ever need more support, 
+    don’t hesitate to get in touch!
+  </div>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Ivo Netto</a>.
+  </footer>
+</div>  
+
+
+
+  <script src="/assets/script.js"></script>
+</body>
+</html>
